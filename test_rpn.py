@@ -18,3 +18,10 @@ class TestBasics(unittest.TestCase):
     def test_exponent(self)
         result = rpn.calculate("12 2 ^")
         self.assertEqual(144, result)
+    def test_exponents(self)
+    	result = rpn.calculate("3 3 ^")
+    	self.assertEqual(27, result)
+    def test_exponent_again(self)
+    	result = rpn.calculate("10 3 ^")
+    	self.assertEqual(1000, result)
+
